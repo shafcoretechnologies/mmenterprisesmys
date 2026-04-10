@@ -2,1407 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>
-      MM Enterprises — School Uniform Accessories Since 1985 | Mysore
-    </title>
-    <meta
-      name="description"
-      content="MM Enterprises, Mysore — Wholesale supplier of school belts, uniform socks, sports medals, designer labels and uniform accessories since 1985. Serving schools across Karnataka."
-    />
-    <meta
-      name="keywords"
-      content="school belt supplier mysore, school uniform accessories mysore, sports medal mysore, uniform socks wholesale mysore, MM Enterprises Mysore"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="meta-title">MM Enterprises - School Uniform Accessories Since 1985 | Mysore</title>
+    <meta id="meta-description" name="description" content="" />
+    <meta id="meta-keywords" name="keywords" content="" />
+    <meta id="meta-author" name="author" content="" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#0d1b3e" />
+    <link id="meta-canonical" rel="canonical" href="" />
+
+    <meta id="og-title" property="og:title" content="" />
+    <meta id="og-description" property="og:description" content="" />
+    <meta id="og-type" property="og:type" content="website" />
+    <meta id="og-url" property="og:url" content="" />
+    <meta id="og-image" property="og:image" content="" />
+    <meta id="og-site-name" property="og:site_name" content="" />
+    <meta id="og-locale" property="og:locale" content="en_IN" />
+
+    <meta id="twitter-card" name="twitter:card" content="summary_large_image" />
+    <meta id="twitter-title" name="twitter:title" content="" />
+    <meta id="twitter-description" name="twitter:description" content="" />
+    <meta id="twitter-image" name="twitter:image" content="" />
+    <meta id="twitter-site" name="twitter:site" content="" />
+
+    <script id="structured-data" type="application/ld+json"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /* ── TOKENS ── */
-      :root {
-        --navy: #0d1b3e;
-        --navy2: #162850;
-        --navy3: #1e3a6e;
-        --gold: #c9973a;
-        --gold2: #e5b84a;
-        --gold3: #f5d27a;
-        --cream: #faf7f0;
-        --cream2: #f2ede3;
-        --ink: #0d1521;
-        --muted: #5a6478;
-        --border: #e8e2d6;
-        --white: #ffffff;
-        --wa: #25d366;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: "DM Sans", sans-serif;
-        background: var(--cream);
-        color: var(--ink);
-        overflow-x: hidden;
-        line-height: 1.6;
-      }
-
-      /* ── TYPOGRAPHY ── */
-      .serif {
-        font-family: "Cormorant Garamond", serif;
-      }
-
-      /* ── CURSOR ── */
-      .cursor {
-        width: 8px;
-        height: 8px;
-        background: var(--gold);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-        transform: translate(-50%, -50%);
-        transition:
-          width 0.2s,
-          height 0.2s;
-      }
-      .cursor-ring {
-        width: 32px;
-        height: 32px;
-        border: 1.5px solid rgba(201, 151, 58, 0.4);
-        border-radius: 50%;
-        position: fixed;
-        pointer-events: none;
-        z-index: 9998;
-        transform: translate(-50%, -50%);
-        transition: all 0.15s ease;
-      }
-      @media (max-width: 768px) {
-        .cursor,
-        .cursor-ring {
-          display: none;
-        }
-      }
-
-      /* ── PROGRESS BAR ── */
-      .progress-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 2px;
-        background: linear-gradient(90deg, var(--gold), var(--gold2));
-        z-index: 200;
-        transition: width 0.1s;
-      }
-
-      /* ── NAV ── */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
-        padding: 0 5vw;
-        height: 68px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        transition: all 0.3s;
-      }
-      nav.scrolled {
-        background: rgba(13, 27, 62, 0.97);
-        backdrop-filter: blur(16px);
-        box-shadow: 0 2px 32px rgba(0, 0, 0, 0.25);
-      }
-      .nav-logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        text-decoration: none;
-      }
-      .nav-logo-mark {
-        width: 38px;
-        height: 38px;
-        background: var(--gold);
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 20px;
-        font-weight: 700;
-        color: var(--navy);
-        letter-spacing: -1px;
-      }
-      .nav-brand {
-        font-size: 15px;
-        font-weight: 600;
-        color: var(--white);
-        letter-spacing: 0.3px;
-      }
-      .nav-brand span {
-        color: var(--gold);
-      }
-      .nav-links {
-        display: flex;
-        gap: 32px;
-        list-style: none;
-      }
-      .nav-links a {
-        font-size: 13px;
-        font-weight: 500;
-        color: rgba(255, 255, 255, 0.75);
-        text-decoration: none;
-        letter-spacing: 0.3px;
-        transition: color 0.2s;
-      }
-      .nav-links a:hover {
-        color: var(--gold);
-      }
-      .nav-enquire {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        background: var(--gold);
-        color: var(--navy);
-        font-size: 13px;
-        font-weight: 700;
-        padding: 9px 20px;
-        border-radius: 7px;
-        text-decoration: none;
-        transition: all 0.2s;
-        letter-spacing: 0.3px;
-      }
-      .nav-enquire:hover {
-        background: var(--gold2);
-        transform: translateY(-1px);
-      }
-      .nav-enquire svg {
-        width: 14px;
-        height: 14px;
-      }
-      .nav-ham {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
-        padding: 4px;
-      }
-      .nav-ham span {
-        width: 21px;
-        height: 1.5px;
-        background: white;
-        border-radius: 2px;
-        transition: all 0.2s;
-      }
-      #mob-menu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.35s ease;
-        background: rgba(13, 27, 62, 0.98);
-      }
-      #mob-menu.open {
-        max-height: 360px;
-      }
-      #mob-menu a {
-        display: block;
-        padding: 13px 5vw;
-        font-size: 14px;
-        font-weight: 600;
-        color: rgba(255, 255, 255, 0.8);
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-      }
-      #mob-menu a:hover {
-        color: var(--gold);
-      }
-
-      /* ── WA FLOAT ── */
-      .wa-float {
-        position: fixed;
-        bottom: 24px;
-        right: 24px;
-        z-index: 50;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        background: var(--wa);
-        color: white;
-        font-weight: 700;
-        font-size: 13px;
-        padding: 12px 18px;
-        border-radius: 50px;
-        box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
-        text-decoration: none;
-        transition: all 0.2s;
-        animation: waPulse 3s ease-in-out infinite;
-      }
-      @keyframes waPulse {
-        0%,
-        100% {
-          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
-        }
-        50% {
-          box-shadow: 0 8px 32px rgba(37, 211, 102, 0.55);
-        }
-      }
-      .wa-float:hover {
-        transform: translateY(-3px);
-      }
-      .wa-float svg {
-        width: 20px;
-        height: 20px;
-      }
-      .wa-float span {
-        white-space: nowrap;
-      }
-
-      /* ── HERO ── */
-      .hero {
-        min-height: 100vh;
-        background: var(--navy);
-        display: flex;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        padding: 100px 5vw 60px;
-      }
-      .hero-grid-lines {
-        position: absolute;
-        inset: 0;
-        background-image:
-          linear-gradient(rgba(201, 151, 58, 0.06) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(201, 151, 58, 0.06) 1px, transparent 1px);
-        background-size: 64px 64px;
-        pointer-events: none;
-      }
-      .hero-glow {
-        position: absolute;
-        top: -200px;
-        right: -200px;
-        width: 700px;
-        height: 700px;
-        background: radial-gradient(
-          circle,
-          rgba(201, 151, 58, 0.12) 0%,
-          transparent 65%
-        );
-        border-radius: 50%;
-        pointer-events: none;
-      }
-      .hero-glow2 {
-        position: absolute;
-        bottom: -200px;
-        left: -100px;
-        width: 500px;
-        height: 500px;
-        background: radial-gradient(
-          circle,
-          rgba(30, 58, 110, 0.8) 0%,
-          transparent 70%
-        );
-        border-radius: 50%;
-        pointer-events: none;
-      }
-
-      .hero-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-        align-items: center;
-        position: relative;
-      }
-
-      /* Left */
-      .hero-eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 24px;
-      }
-      .eyebrow-line {
-        width: 36px;
-        height: 1px;
-        background: var(--gold);
-      }
-      .eyebrow-text {
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
-      .hero-h1 {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(44px, 6vw, 72px);
-        line-height: 1.05;
-        letter-spacing: -0.5px;
-        color: var(--white);
-        margin-bottom: 6px;
-      }
-      .hero-h1 em {
-        font-style: italic;
-        color: var(--gold);
-      }
-      .hero-sub-h {
-        font-size: clamp(16px, 2vw, 21px);
-        color: rgba(255, 255, 255, 0.5);
-        font-weight: 300;
-        margin-bottom: 28px;
-      }
-      .hero-desc {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.65);
-        line-height: 1.75;
-        max-width: 460px;
-        margin-bottom: 40px;
-        font-weight: 300;
-      }
-      .hero-actions {
-        display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
-        margin-bottom: 48px;
-      }
-      .btn-gold {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: var(--gold);
-        color: var(--navy);
-        font-weight: 700;
-        font-size: 14px;
-        padding: 14px 28px;
-        border-radius: 9px;
-        text-decoration: none;
-        transition: all 0.2s;
-        letter-spacing: 0.2px;
-      }
-      .btn-gold:hover {
-        background: var(--gold2);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(201, 151, 58, 0.3);
-      }
-      .btn-ghost {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: transparent;
-        color: rgba(255, 255, 255, 0.85);
-        font-weight: 600;
-        font-size: 14px;
-        padding: 13px 28px;
-        border-radius: 9px;
-        border: 1.5px solid rgba(255, 255, 255, 0.2);
-        text-decoration: none;
-        transition: all 0.2s;
-      }
-      .btn-ghost:hover {
-        border-color: var(--gold);
-        color: var(--gold);
-      }
-      .hero-stats {
-        display: flex;
-        gap: 40px;
-      }
-      .hero-stat-num {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 40px;
-        font-weight: 700;
-        color: var(--gold);
-        line-height: 1;
-      }
-      .hero-stat-num span {
-        font-size: 22px;
-      }
-      .hero-stat-label {
-        font-size: 11px;
-        color: rgba(255, 255, 255, 0.45);
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        margin-top: 2px;
-      }
-
-      /* Right: product stack */
-      .hero-right {
-        position: relative;
-        display: flex;
-        justify-content: center;
-      }
-      .hero-img-main {
-        width: 100%;
-        max-width: 420px;
-        height: auto; /* ✅ keeps full image */
-        object-fit: contain; /* ✅ no crop */
-        border-radius: 16px;
-        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
-      }
-      .hero-card-float {
-        position: absolute;
-        bottom: -20px;
-        left: -30px;
-        background: var(--cream);
-        border-radius: 14px;
-        padding: 16px 20px;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
-        max-width: 180px;
-        animation: floatCard 5s ease-in-out infinite;
-      }
-      @keyframes floatCard {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-      .hero-card-float .cf-num {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 30px;
-        font-weight: 700;
-        color: var(--navy);
-        line-height: 1;
-      }
-      .hero-card-float .cf-label {
-        font-size: 11px;
-        color: var(--muted);
-        font-weight: 500;
-        margin-top: 3px;
-      }
-      .hero-badge-float {
-        position: absolute;
-        top: 20px;
-        right: -20px;
-        background: var(--navy2);
-        border: 1px solid rgba(201, 151, 58, 0.3);
-        color: var(--gold);
-        font-size: 11px;
-        font-weight: 700;
-        padding: 10px 14px;
-        border-radius: 10px;
-        text-align: center;
-        animation: floatCard 4s ease-in-out infinite 0.8s;
-      }
-      .hero-badge-float div:first-child {
-        font-size: 20px;
-        margin-bottom: 2px;
-      }
-
-      /* ── TICKER ── */
-      .ticker {
-        background: var(--gold);
-        padding: 12px 0;
-        overflow: hidden;
-      }
-      .ticker-inner {
-        display: flex;
-        gap: 48px;
-        animation: ticker 20s linear infinite;
-        white-space: nowrap;
-      }
-      @keyframes ticker {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      .ticker-item {
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--navy);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-      .ticker-dot {
-        width: 5px;
-        height: 5px;
-        background: var(--navy);
-        border-radius: 50%;
-        opacity: 0.4;
-      }
-
-      /* ── SECTION BASE ── */
-      section {
-        padding: 88px 5vw;
-      }
-      .sec-inner {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      .sec-eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 14px;
-      }
-      .sec-eyebrow-line {
-        width: 28px;
-        height: 1.5px;
-        background: var(--gold);
-      }
-      .sec-eyebrow-text {
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.15em;
-        text-transform: uppercase;
-        color: var(--gold);
-      }
-      .sec-title {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(32px, 4.5vw, 52px);
-        color: var(--navy);
-        line-height: 1.12;
-        letter-spacing: -0.3px;
-        margin-bottom: 14px;
-      }
-      .sec-sub {
-        font-size: 16px;
-        color: var(--muted);
-        max-width: 520px;
-        line-height: 1.7;
-        font-weight: 300;
-      }
-
-      /* ── PRODUCTS ── */
-      .products-bg {
-        background: var(--white);
-      }
-      .products-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        margin-top: 56px;
-      }
-      .product-card {
-        border-radius: 16px;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        background: var(--cream);
-        transition:
-          transform 0.25s,
-          box-shadow 0.25s,
-          border-color 0.25s;
-        cursor: default;
-      }
-      .product-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 20px 48px rgba(13, 27, 62, 0.1);
-        border-color: var(--gold);
-      }
-      .product-img-wrap {
-        position: relative;
-        aspect-ratio: 4/3;
-        overflow: hidden;
-        background: #e8e2d8;
-      }
-      .product-img-wrap img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-      }
-      .product-card:hover .product-img-wrap img {
-        transform: scale(1.06);
-      }
-      .product-cat-badge {
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        background: var(--navy);
-        color: var(--gold);
-        font-size: 10px;
-        font-weight: 700;
-        padding: 4px 10px;
-        border-radius: 6px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .product-body {
-        padding: 20px 22px;
-      }
-      .product-name {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 22px;
-        font-weight: 700;
-        color: var(--navy);
-        margin-bottom: 7px;
-      }
-      .product-desc {
-        font-size: 13px;
-        color: var(--muted);
-        line-height: 1.65;
-        margin-bottom: 14px;
-      }
-      .product-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-      }
-      .product-tag {
-        font-size: 11px;
-        font-weight: 600;
-        background: var(--cream2);
-        color: var(--navy3);
-        padding: 4px 10px;
-        border-radius: 6px;
-        border: 1px solid var(--border);
-      }
-      .product-enquire {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 14px;
-        font-size: 12px;
-        font-weight: 700;
-        color: var(--gold);
-        text-decoration: none;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        transition: gap 0.2s;
-      }
-      .product-enquire:hover {
-        gap: 10px;
-      }
-      .product-enquire svg {
-        width: 14px;
-        height: 14px;
-      }
-
-      /* ── WHY US ── */
-      .why-bg {
-        background: var(--navy);
-      }
-      .why-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-        margin-top: 56px;
-      }
-      .why-card {
-        border: 1px solid rgba(201, 151, 58, 0.2);
-        border-radius: 14px;
-        padding: 28px 24px;
-        transition:
-          border-color 0.2s,
-          background 0.2s;
-      }
-      .why-card:hover {
-        border-color: rgba(201, 151, 58, 0.5);
-        background: rgba(201, 151, 58, 0.04);
-      }
-      .why-icon {
-        width: 48px;
-        height: 48px;
-        background: rgba(201, 151, 58, 0.12);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 18px;
-      }
-      .why-icon svg {
-        width: 22px;
-        height: 22px;
-        color: var(--gold);
-      }
-      .why-title {
-        font-size: 15px;
-        font-weight: 700;
-        color: var(--white);
-        margin-bottom: 8px;
-      }
-      .why-text {
-        font-size: 13px;
-        color: rgba(255, 255, 255, 0.5);
-        line-height: 1.65;
-        font-weight: 300;
-      }
-
-      /* ── ABOUT ── */
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 80px;
-        align-items: center;
-      }
-      .about-img-wrap {
-        position: relative;
-      }
-      .about-img-stack {
-        position: relative;
-        height: 480px;
-      }
-      .about-img-main {
-        width: 75%;
-        aspect-ratio: 3/4;
-        object-fit: cover;
-        border-radius: 16px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        box-shadow: 0 24px 56px rgba(0, 0, 0, 0.15);
-      }
-      .about-img-accent {
-        width: 55%;
-        aspect-ratio: 1;
-        object-fit: cover;
-        border-radius: 12px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-        border: 4px solid var(--cream);
-      }
-      .about-year-badge {
-        position: absolute;
-        top: 32px;
-        left: -16px;
-        background: var(--navy);
-        color: var(--gold);
-        text-align: center;
-        padding: 14px 18px;
-        border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(13, 27, 62, 0.15);
-      }
-      .about-year-badge .year {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 34px;
-        font-weight: 700;
-        line-height: 1;
-      }
-      .about-year-badge .since {
-        font-size: 10px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.5);
-        margin-top: 2px;
-      }
-      .about-facts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-top: 32px;
-      }
-      .about-fact {
-        padding: 16px 18px;
-        background: var(--cream2);
-        border-radius: 12px;
-        border: 1px solid var(--border);
-      }
-      .about-fact-num {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 28px;
-        font-weight: 700;
-        color: var(--navy);
-        line-height: 1;
-        margin-bottom: 3px;
-      }
-      .about-fact-label {
-        font-size: 12px;
-        color: var(--muted);
-        font-weight: 500;
-      }
-      .about-text {
-        font-size: 15px;
-        color: var(--muted);
-        line-height: 1.8;
-        margin-bottom: 18px;
-        font-weight: 300;
-      }
-      .about-list {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 20px;
-      }
-      .about-list li {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-        font-size: 14px;
-        color: var(--ink);
-      }
-      .about-check {
-        width: 20px;
-        height: 20px;
-        background: var(--gold);
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-        margin-top: 1px;
-      }
-      .about-check svg {
-        width: 11px;
-        height: 11px;
-        color: var(--navy);
-      }
-
-      /* ── CLIENTS (school type badges) ── */
-      .clients-bg {
-        background: var(--cream2);
-      }
-      .clients-badges {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 40px;
-      }
-      .client-badge {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        background: var(--white);
-        border: 1px solid var(--border);
-        padding: 12px 20px;
-        border-radius: 10px;
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--navy);
-        transition: all 0.2s;
-      }
-      .client-badge:hover {
-        border-color: var(--gold);
-        background: var(--cream);
-        transform: translateY(-2px);
-      }
-      .client-badge svg {
-        width: 16px;
-        height: 16px;
-        color: var(--gold);
-      }
-
-      /* ── TESTIMONIALS ── */
-      .testi-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        margin-top: 48px;
-      }
-      .testi-card {
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 26px;
-        transition:
-          transform 0.2s,
-          box-shadow 0.2s;
-      }
-      .testi-card:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-      }
-      .testi-stars {
-        color: var(--gold);
-        font-size: 14px;
-        letter-spacing: 2px;
-        margin-bottom: 14px;
-      }
-      .testi-quote {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 18px;
-        line-height: 1.6;
-        color: var(--navy);
-        font-style: italic;
-        margin-bottom: 18px;
-      }
-      .testi-author {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding-top: 14px;
-        border-top: 1px solid var(--border);
-      }
-      .testi-avatar {
-        width: 38px;
-        height: 38px;
-        border-radius: 50%;
-        background: var(--navy);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 16px;
-        font-weight: 700;
-        color: var(--gold);
-        flex-shrink: 0;
-      }
-      .testi-name {
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--ink);
-      }
-      .testi-role {
-        font-size: 11px;
-        color: var(--muted);
-      }
-
-      /* ── CTA SECTION ── */
-      .cta-section {
-        background: var(--navy);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-      }
-      .cta-section::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        height: 600px;
-        background: radial-gradient(
-          circle,
-          rgba(201, 151, 58, 0.12) 0%,
-          transparent 65%
-        );
-        border-radius: 50%;
-        pointer-events: none;
-      }
-      .cta-title {
-        font-family: "Cormorant Garamond", serif;
-        font-size: clamp(36px, 5vw, 58px);
-        color: var(--white);
-        line-height: 1.1;
-        margin-bottom: 16px;
-        position: relative;
-      }
-      .cta-title em {
-        font-style: italic;
-        color: var(--gold);
-      }
-      .cta-sub {
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.55);
-        max-width: 520px;
-        margin: 0 auto 40px;
-        line-height: 1.7;
-        font-weight: 300;
-        position: relative;
-      }
-      .cta-actions {
-        display: flex;
-        gap: 14px;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative;
-      }
-      .cta-trust {
-        margin-top: 28px;
-        font-size: 12px;
-        color: rgba(255, 255, 255, 0.3);
-        position: relative;
-        letter-spacing: 0.05em;
-      }
-
-      /* ── CONTACT ── */
-      .contact-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 64px;
-        align-items: start;
-      }
-      .contact-info-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-      }
-      .contact-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 16px;
-        padding: 20px 0;
-        border-bottom: 1px solid var(--border);
-      }
-      .contact-item:last-child {
-        border-bottom: none;
-      }
-      .contact-icon-wrap {
-        width: 44px;
-        height: 44px;
-        background: var(--cream2);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-      }
-      .contact-icon-wrap svg {
-        width: 18px;
-        height: 18px;
-        color: var(--navy3);
-      }
-      .contact-label {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--muted);
-        margin-bottom: 4px;
-      }
-      .contact-value {
-        font-size: 15px;
-        font-weight: 600;
-        color: var(--ink);
-      }
-      .contact-value a {
-        color: var(--navy3);
-        text-decoration: none;
-      }
-      .contact-value a:hover {
-        color: var(--gold);
-      }
-      .contact-form {
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        padding: 36px;
-      }
-      .form-title {
-        font-family: "Cormorant Garamond", serif;
-        font-size: 26px;
-        font-weight: 700;
-        color: var(--navy);
-        margin-bottom: 6px;
-      }
-      .form-sub {
-        font-size: 13px;
-        color: var(--muted);
-        margin-bottom: 28px;
-      }
-      .form-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-bottom: 14px;
-      }
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-      .form-group.full {
-        grid-column: span 2;
-      }
-      .form-label {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.07em;
-        color: var(--muted);
-      }
-      .form-input,
-      .form-select,
-      .form-textarea {
-        font-family: "DM Sans", sans-serif;
-        font-size: 14px;
-        color: var(--ink);
-        border: 1.5px solid var(--border);
-        border-radius: 9px;
-        padding: 11px 14px;
-        background: var(--cream);
-        outline: none;
-        transition: border-color 0.15s;
-        width: 100%;
-      }
-      .form-input:focus,
-      .form-select:focus,
-      .form-textarea:focus {
-        border-color: var(--gold);
-      }
-      .form-textarea {
-        min-height: 110px;
-        resize: vertical;
-      }
-      .form-btn {
-        width: 100%;
-        padding: 14px;
-        background: var(--navy);
-        color: white;
-        font-family: "DM Sans", sans-serif;
-        font-size: 15px;
-        font-weight: 700;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        transition:
-          background 0.2s,
-          transform 0.15s;
-        margin-top: 6px;
-      }
-      .form-btn:hover {
-        background: var(--navy3);
-        transform: translateY(-1px);
-      }
-      #form-ok {
-        display: none;
-        text-align: center;
-        padding: 20px;
-        background: #f0fdf4;
-        border: 1px solid #bbf7d0;
-        border-radius: 10px;
-        color: #15803d;
-        font-weight: 600;
-        font-size: 14px;
-        margin-top: 8px;
-      }
-
-      /* ── MAP ── */
-      .map-wrap {
-        border-radius: 14px;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        height: 200px;
-        margin-top: 20px;
-      }
-      .map-wrap iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-
-      /* ── FOOTER ── */
-      footer {
-        background: var(--navy);
-        padding: 56px 5vw 28px;
-        color: rgba(255, 255, 255, 0.5);
-      }
-      .footer-top {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
-        gap: 48px;
-        max-width: 1200px;
-        margin: 0 auto 40px;
-      }
-      .footer-logo-row {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 14px;
-      }
-      .footer-brand {
-        font-size: 17px;
-        font-weight: 700;
-        color: white;
-      }
-      .footer-brand span {
-        color: var(--gold);
-      }
-      .footer-desc {
-        font-size: 13px;
-        line-height: 1.75;
-        max-width: 260px;
-        margin-bottom: 20px;
-      }
-      .footer-gold-line {
-        width: 40px;
-        height: 2px;
-        background: var(--gold);
-        border-radius: 2px;
-      }
-      .footer-col h4 {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        color: rgba(255, 255, 255, 0.3);
-        margin-bottom: 18px;
-      }
-      .footer-col a {
-        display: block;
-        font-size: 13px;
-        color: rgba(255, 255, 255, 0.45);
-        text-decoration: none;
-        margin-bottom: 10px;
-        transition: color 0.2s;
-      }
-      .footer-col a:hover {
-        color: var(--gold);
-      }
-      .footer-bottom {
-        border-top: 1px solid rgba(255, 255, 255, 0.07);
-        padding-top: 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 12px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      .footer-bottom a {
-        color: rgba(255, 255, 255, 0.3);
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-      .footer-bottom a:hover {
-        color: var(--gold);
-      }
-
-      /* ── FADE IN ── */
-      .fade {
-        opacity: 0;
-        transform: translateY(22px);
-        transition:
-          opacity 0.65s ease,
-          transform 0.65s ease;
-      }
-      .fade.in {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* ── RESPONSIVE ── */
-      @media (max-width: 1024px) {
-        .products-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .why-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-        .about-img-stack {
-          display: none;
-        }
-        .footer-top {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media (max-width: 768px) {
-        .nav-links,
-        .nav-enquire {
-          display: none;
-        }
-        .nav-ham {
-          display: flex;
-        }
-        .hero-inner {
-          grid-template-columns: 1fr;
-        }
-        .hero-right {
-          display: none;
-        }
-        .products-grid,
-        .why-grid,
-        .testi-grid,
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-        .form-row {
-          grid-template-columns: 1fr;
-        }
-        .form-group.full {
-          grid-column: span 1;
-        }
-        .footer-top {
-          grid-template-columns: 1fr 1fr;
-        }
-        .footer-bottom {
-          flex-direction: column;
-          gap: 8px;
-          text-align: center;
-        }
-        .hero-stats {
-          gap: 28px;
-        }
-      }
-      @media (max-width: 480px) {
-        .footer-top {
-          grid-template-columns: 1fr;
-        }
-        .hero-stats {
-          flex-wrap: wrap;
-          gap: 20px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="cursor" id="c"></div>
     <div class="cursor-ring" id="cr"></div>
     <div class="progress-bar" id="pb"></div>
 
-    <!-- WA FLOAT -->
-    <a
-      class="wa-float"
-      href="https://wa.me/919243332224?text=Hi%2C%20I%20visited%20your%20website%20and%20want%20to%20enquire%20about%20your%20products."
-      target="_blank"
-      rel="noopener"
-    >
-      <svg viewBox="0 0 24 24" fill="white">
+    <nav id="nav">
+      <a class="nav-logo" href="#top">
+        <div class="nav-logo-mark" data-text="brand.mark"></div>
+        <div class="nav-brand" data-html="brand.nameHtml"></div>
+      </a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <a class="nav-enquire" id="nav-cta" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        <span data-text="nav.cta.label"></span>
+      </a>
+      <div class="nav-ham" id="ham" aria-label="Open menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <div id="mob-menu" class="mob-menu"></div>
+
+    <a class="wa-float" id="wa-float" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor">
         <path
           d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"
         />
       </svg>
-      <span>Enquire on WhatsApp</span>
+      <span data-text="wa.label"></span>
     </a>
 
-    <!-- NAV -->
-    <nav id="nav">
-      <a class="nav-logo" href="#">
-        <div class="nav-logo-mark">MM</div>
-        <span class="nav-brand">MM <span>Enterprises</span></span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#clients">Who We Serve</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="nav-enquire" href="#contact">
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-        </svg>
-        Get a Quote
-      </a>
-      <div class="nav-ham" id="ham" onclick="toggleMob()">
-        <span></span><span></span><span></span>
-      </div>
-    </nav>
-
-    <!-- MOBILE MENU -->
-    <div id="mob-menu">
-      <a href="#products" onclick="toggleMob()">Products</a>
-      <a href="#about" onclick="toggleMob()">About Us</a>
-      <a href="#clients" onclick="toggleMob()">Who We Serve</a>
-      <a href="#testimonials" onclick="toggleMob()">Reviews</a>
-      <a href="#contact" onclick="toggleMob()">Contact & Quote</a>
-      <a
-        href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20products."
-        target="_blank"
-        style="color: #25d366; font-weight: 700"
-        >WhatsApp Us</a
-      >
-    </div>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
+    <section class="hero" id="top">
       <div class="hero-grid-lines"></div>
       <div class="hero-glow"></div>
       <div class="hero-glow2"></div>
@@ -1411,519 +77,72 @@
         <div>
           <div class="hero-eyebrow fade">
             <div class="eyebrow-line"></div>
-            <span class="eyebrow-text">Since 1985 · Mysore, Karnataka</span>
+            <span class="eyebrow-text" data-text="hero.eyebrow"></span>
           </div>
-          <h1 class="hero-h1 fade">
-            Karnataka's Trusted<br />
-            <em>School Uniform</em><br />
-            Accessories Supplier
-          </h1>
-          <p class="hero-sub-h fade">Wholesale · Retail · Custom Orders</p>
-          <p class="hero-desc fade">
-            For 40 years, MM Enterprises has been the first name schools across
-            Mysore and Karnataka call for quality school belts, uniform socks,
-            sports medals, designer labels, and ties — delivered on time, every
-            time.
-          </p>
-          <div class="hero-actions fade">
-            <a href="#products" class="btn-gold">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2.5"
-              >
-                <rect x="3" y="3" width="7" height="7" />
-                <rect x="14" y="3" width="7" height="7" />
-                <rect x="14" y="14" width="7" height="7" />
-                <rect x="3" y="14" width="7" height="7" />
-              </svg>
-              Browse Products
-            </a>
-            <a href="#contact" class="btn-ghost">Request Bulk Quote →</a>
-          </div>
-          <div class="hero-stats fade">
-            <div>
-              <div class="hero-stat-num">40<span>+</span></div>
-              <div class="hero-stat-label">Years in Business</div>
-            </div>
-            <div>
-              <div class="hero-stat-num">500<span>+</span></div>
-              <div class="hero-stat-label">Schools Served</div>
-            </div>
-            <div>
-              <div class="hero-stat-num">4.9<span>★</span></div>
-              <div class="hero-stat-label">Rated on Justdial</div>
-            </div>
-          </div>
+          <h1 class="hero-h1 fade" data-html="hero.titleHtml"></h1>
+          <p class="hero-sub-h fade" data-text="hero.subtitle"></p>
+          <p class="hero-desc fade" data-text="hero.description"></p>
+          <div class="hero-actions fade" id="hero-actions"></div>
+          <div class="hero-stats fade" id="hero-stats"></div>
         </div>
 
         <div class="hero-right">
-          <img
-            class="hero-img-main"
-            src="assets/hero.png"
-            alt="School uniform accessories"
-            onerror="this.style.opacity = 0"
-          />
-          <div class="hero-card-float">
-            <div class="cf-num">500+</div>
-            <div class="cf-label">Schools trust us<br />across Karnataka</div>
+          <img class="hero-img-main" id="hero-image" src="" alt="" />
+          <div class="hero-card-float" id="hero-card">
+            <div class="cf-num" data-text="hero.card.value"></div>
+            <div class="cf-label" data-html="hero.card.labelHtml"></div>
           </div>
-          <div class="hero-badge-float">
-            <div>🏆</div>
-            <div
-              style="
-                font-size: 11px;
-                font-weight: 700;
-                color: rgba(201, 151, 58, 1);
-                margin-top: 2px;
-              "
-            >
-              GST Verified
-            </div>
-            <div style="font-size: 10px; color: rgba(255, 255, 255, 0.4)">
-              Registered 2017
-            </div>
+          <div class="hero-badge-float" id="hero-badge">
+            <div data-text="hero.badge.icon"></div>
+            <div class="hero-badge-title" data-text="hero.badge.title"></div>
+            <div class="hero-badge-sub" data-text="hero.badge.subtitle"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TICKER -->
     <div class="ticker">
-      <div class="ticker-inner">
-        <div class="ticker-item">
-          School Belts <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Uniform Socks <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Sports Medals <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Designer Labels <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          School Ties <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Bulk Orders Welcome <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Custom Printing Available <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          40 Years of Trust <span class="ticker-dot"></span>
-        </div>
-        <!-- duplicate for loop -->
-        <div class="ticker-item">
-          School Belts <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Uniform Socks <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Sports Medals <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Designer Labels <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          School Ties <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Bulk Orders Welcome <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          Custom Printing Available <span class="ticker-dot"></span>
-        </div>
-        <div class="ticker-item">
-          40 Years of Trust <span class="ticker-dot"></span>
-        </div>
-      </div>
+      <div class="ticker-inner" id="ticker-inner"></div>
     </div>
 
-    <!-- PRODUCTS -->
     <section id="products" class="products-bg">
       <div class="sec-inner">
         <div class="fade">
           <div class="sec-eyebrow">
             <div class="sec-eyebrow-line"></div>
-            <span class="sec-eyebrow-text">Our Product Range</span>
+            <span class="sec-eyebrow-text" data-text="products.eyebrow"></span>
           </div>
-          <h2 class="sec-title">
-            Everything Your School<br />Needs, In One Place
-          </h2>
-          <p class="sec-sub">
-            Quality-tested products, available in bulk. Custom school branding
-            and printing available on all items.
-          </p>
+          <h2 class="sec-title" data-html="products.titleHtml"></h2>
+          <p class="sec-sub" data-text="products.subtitle"></p>
         </div>
 
-        <div class="products-grid">
-          <div class="product-card fade">
-            <div class="product-img-wrap">
-              <img
-                src="assets/sweater_tshirts_and_bags.png"
-                alt="School Belts"
-              />
-              <span class="product-cat-badge">Best Seller</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-name">School Uniform Belts</h3>
-              <p class="product-desc">
-                Durable nylon and polyester belts with brass or plastic buckles.
-                Available in all sizes from Class 1 to Class 12. Custom school
-                name printing available.
-              </p>
-              <div class="product-tags">
-                <span class="product-tag">All Sizes</span>
-                <span class="product-tag">Custom Print</span>
-                <span class="product-tag">Bulk Orders</span>
-              </div>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20School%20Belts."
-                target="_blank"
-                class="product-enquire"
-              >
-                Enquire Now
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="product-card fade">
-            <div class="product-img-wrap">
-              <img src="assets/bags_and_uniform.png" alt="Uniform Socks" />
-              <span class="product-cat-badge">High Demand</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-name">Uniform Socks</h3>
-              <p class="product-desc">
-                Cotton-blend school socks in white, grey, navy and all school
-                colours. Breathable, anti-odour, and durable enough for daily
-                school wear.
-              </p>
-              <div class="product-tags">
-                <span class="product-tag">All Colours</span>
-                <span class="product-tag">Cotton Blend</span>
-                <span class="product-tag">Anti-Odour</span>
-              </div>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Uniform%20Socks."
-                target="_blank"
-                class="product-enquire"
-              >
-                Enquire Now
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="product-card fade">
-            <div class="product-img-wrap">
-              <img src="assets/medals_and_cups.png" alt="Sports Medals" />
-              <span class="product-cat-badge">Annual Day Ready</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-name">Sports Medals & Awards</h3>
-              <p class="product-desc">
-                Gold, silver and bronze medals for sports days, annual functions
-                and competitions. Custom engraving with school name and event
-                details available.
-              </p>
-              <div class="product-tags">
-                <span class="product-tag">Custom Engraving</span>
-                <span class="product-tag">Gold / Silver / Bronze</span>
-              </div>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Sports%20Medals."
-                target="_blank"
-                class="product-enquire"
-              >
-                Enquire Now
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="product-card fade">
-            <div class="product-img-wrap">
-              <img src="assets/badges.png" alt="Designer Labels" />
-              <span class="product-cat-badge">Custom Branding</span>
-            </div>
-            <div class="product-body">
-              <h3 class="product-name">Designer Labels & Badges</h3>
-              <p class="product-desc">
-                Woven name labels, cloth badges, embroidered emblems. School
-                logo printing on labels — ideal for uniforms, bags, books and
-                stationery.
-              </p>
-              <div class="product-tags">
-                <span class="product-tag">Woven Labels</span>
-                <span class="product-tag">Cloth Badges</span>
-                <span class="product-tag">Logo Embroidery</span>
-              </div>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Designer%20Labels."
-                target="_blank"
-                class="product-enquire"
-              >
-                Enquire Now
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="product-card fade">
-            <div class="product-img-wrap">
-              <img src="assets/industrial wear.png" alt="School Ties" />
-            </div>
-            <div class="product-body">
-              <h3 class="product-name">Industrial Uniforms</h3>
-              <p class="product-desc">
-                Durable industrial uniforms and safety gear including coveralls,
-                jackets, reflective vests, and workwear designed for factories,
-                construction sites, and technical staff. Built for comfort,
-                safety, and long-lasting performance.
-              </p>
-              <div class="product-tags">
-                <span class="product-tag">Safety Certified</span>
-                <span class="product-tag">Custom Branding</span>
-              </div>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20School%20Ties."
-                target="_blank"
-                class="product-enquire"
-              >
-                Enquire Now
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="product-card fade"
-            style="
-              background: var(--navy);
-              border-color: rgba(201, 151, 58, 0.25);
-            "
-          >
-            <div
-              class="product-img-wrap"
-              style="
-                background: rgba(201, 151, 58, 0.08);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <div style="text-align: center; padding: 40px 20px">
-                <div
-                  style="
-                    font-family: &quot;Cormorant Garamond&quot;, serif;
-                    font-size: 48px;
-                    color: var(--gold);
-                    line-height: 1;
-                  "
-                >
-                  ?
-                </div>
-                <p
-                  style="
-                    color: rgba(255, 255, 255, 0.5);
-                    font-size: 13px;
-                    margin-top: 10px;
-                  "
-                >
-                  Need something specific?
-                </p>
-              </div>
-            </div>
-            <div class="product-body">
-              <h3 class="product-name" style="color: white">
-                Custom Requirement?
-              </h3>
-              <p class="product-desc" style="color: rgba(255, 255, 255, 0.5)">
-                We fulfil custom uniform accessory orders for schools of any
-                size. Tell us what you need and we'll provide a competitive bulk
-                quote.
-              </p>
-              <a
-                href="https://wa.me/919243332224?text=Hi%2C%20I%20have%20a%20custom%20school%20uniform%20accessory%20requirement."
-                target="_blank"
-                class="product-enquire"
-                style="color: var(--gold)"
-              >
-                Tell Us Your Need
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                >
-                  <polyline points="9 18 15 12 9 6" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+        <div class="products-grid" id="products-grid"></div>
       </div>
     </section>
 
-    <!-- WHY US -->
     <section class="why-bg">
       <div class="sec-inner">
-        <div class="fade" style="text-align: center; margin-bottom: 0">
-          <div class="sec-eyebrow" style="justify-content: center">
+        <div class="fade section-center">
+          <div class="sec-eyebrow sec-eyebrow-center">
             <div class="sec-eyebrow-line"></div>
-            <span class="sec-eyebrow-text">Why Schools Choose Us</span>
+            <span class="sec-eyebrow-text" data-text="why.eyebrow"></span>
           </div>
-          <h2 class="sec-title" style="color: white; text-align: center">
-            The MM Enterprises Difference
-          </h2>
+          <h2 class="sec-title sec-title-light" data-text="why.title"></h2>
         </div>
-        <div class="why-grid">
-          <div class="why-card fade">
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <div class="why-title">40 Years of Trust</div>
-            <div class="why-text">
-              Established in 1985, we have been serving Karnataka schools for
-              four decades. Schools that joined us in the 90s are still our
-              customers today.
-            </div>
-          </div>
-          <div class="why-card fade">
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                />
-              </svg>
-            </div>
-            <div class="why-title">Quality Guaranteed</div>
-            <div class="why-text">
-              Every product is quality-checked before dispatch. Durable
-              materials, neat stitching, colourfastness — we stand behind
-              everything we supply.
-            </div>
-          </div>
-          <div class="why-card fade">
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <path
-                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
-                />
-              </svg>
-            </div>
-            <div class="why-title">Bulk Order Experts</div>
-            <div class="why-text">
-              Whether you need 50 belts or 5,000 — we handle bulk orders
-              efficiently with competitive pricing that scales with your order
-              size.
-            </div>
-          </div>
-          <div class="why-card fade">
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polyline points="12 6 12 12 16 14" />
-              </svg>
-            </div>
-            <div class="why-title">On-Time Delivery</div>
-            <div class="why-text">
-              We understand school calendars. Your orders arrive before the
-              academic year begins, not after. Reliable road delivery across
-              Karnataka.
-            </div>
-          </div>
-        </div>
+        <div class="why-grid" id="why-grid"></div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
       <div class="sec-inner">
         <div class="about-grid">
           <div class="about-img-wrap fade">
             <div class="about-img-stack">
-              <img
-                class="about-img-main"
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
-                alt="MM Enterprises store"
-                onerror="this.style.opacity = 0"
-              />
-              <img
-                class="about-img-accent"
-                src="https://images.unsplash.com/photo-1503676382389-4809596d5290?w=400&q=80"
-                alt="School products"
-                onerror="this.style.opacity = 0"
-              />
+              <img class="about-img-main" id="about-image-main" src="" alt="" />
+              <img class="about-img-accent" id="about-image-accent" src="" alt="" />
               <div class="about-year-badge">
-                <div class="year">1985</div>
-                <div class="since">Since</div>
+                <div class="year" data-text="about.badge.year"></div>
+                <div class="since" data-text="about.badge.label"></div>
               </div>
             </div>
           </div>
@@ -1931,453 +150,89 @@
           <div>
             <div class="sec-eyebrow fade">
               <div class="sec-eyebrow-line"></div>
-              <span class="sec-eyebrow-text">Our Story</span>
+              <span class="sec-eyebrow-text" data-text="about.eyebrow"></span>
             </div>
-            <h2 class="sec-title fade">
-              Four Decades of Serving Karnataka's Schools
-            </h2>
-            <p class="about-text fade">
-              Founded in 1985 by Mr. M. Malick, MM Enterprises started as a
-              humble supplier of school accessories in Mysore. What began as a
-              small operation has grown into one of Karnataka's most trusted
-              names in school uniform accessories.
-            </p>
-            <p class="about-text fade">
-              Today, from our store on Abdul Rahman Road, Udaygiri, Mysore, we
-              serve hundreds of schools across the region — supplying everything
-              from belts and socks to medals and custom labels — with the same
-              commitment to quality and service that built our reputation over
-              four decades.
-            </p>
+            <h2 class="sec-title fade" data-text="about.title"></h2>
+            <div id="about-text" class="about-text-wrap"></div>
 
-            <ul class="about-list fade">
-              <li>
-                <div class="about-check">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-                GST-registered, government-verified business
-              </li>
-              <li>
-                <div class="about-check">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-                Wholesale and retail — small and large orders both welcome
-              </li>
-              <li>
-                <div class="about-check">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-                Custom branding — school name, logo and emblem printing
-              </li>
-              <li>
-                <div class="about-check">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="3"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
-                4.9★ rated on Justdial · Trusted by 500+ Karnataka schools
-              </li>
-            </ul>
+            <ul class="about-list fade" id="about-list"></ul>
 
-            <div class="about-facts fade">
-              <div class="about-fact">
-                <div class="about-fact-num">1985</div>
-                <div class="about-fact-label">Year Established</div>
-              </div>
-              <div class="about-fact">
-                <div class="about-fact-num">40+</div>
-                <div class="about-fact-label">Years Experience</div>
-              </div>
-              <div class="about-fact">
-                <div class="about-fact-num">500+</div>
-                <div class="about-fact-label">Schools Served</div>
-              </div>
-              <div class="about-fact">
-                <div class="about-fact-num">4.9★</div>
-                <div class="about-fact-label">Justdial Rating</div>
-              </div>
-            </div>
+            <div class="about-facts fade" id="about-facts"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WHO WE SERVE -->
     <section id="clients" class="clients-bg">
       <div class="sec-inner">
         <div class="fade">
           <div class="sec-eyebrow">
             <div class="sec-eyebrow-line"></div>
-            <span class="sec-eyebrow-text">Who We Serve</span>
+            <span class="sec-eyebrow-text" data-text="clients.eyebrow"></span>
           </div>
-          <h2 class="sec-title">
-            Trusted Supplier for Every<br />Type of Institution
-          </h2>
-          <p class="sec-sub">
-            From small primary schools to large colleges — we have the capacity
-            and product range to serve institutions of every size.
-          </p>
+          <h2 class="sec-title" data-html="clients.titleHtml"></h2>
+          <p class="sec-sub" data-text="clients.subtitle"></p>
         </div>
-        <div class="clients-badges fade">
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
-            >CBSE Schools
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
-            >ICSE Schools
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
-            >State Board Schools
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg
-            >Kendriya Vidyalayas
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
-              <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" /></svg
-            >Colleges & Universities
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
-              <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" /></svg
-            >Coaching Institutes
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <circle cx="9" cy="21" r="1" />
-              <circle cx="20" cy="21" r="1" />
-              <path
-                d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"
-              /></svg
-            >Uniform Retailers
-          </div>
-          <div class="client-badge">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <circle cx="9" cy="21" r="1" />
-              <circle cx="20" cy="21" r="1" />
-              <path
-                d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"
-              /></svg
-            >School Canteen Dealers
-          </div>
-        </div>
+        <div class="clients-badges fade" id="clients-badges"></div>
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" style="background: var(--white)">
+    <section id="testimonials" class="section-white">
       <div class="sec-inner">
         <div class="fade">
           <div class="sec-eyebrow">
             <div class="sec-eyebrow-line"></div>
-            <span class="sec-eyebrow-text">What Schools Say</span>
+            <span class="sec-eyebrow-text" data-text="testimonials.eyebrow"></span>
           </div>
-          <h2 class="sec-title">
-            Trusted Reviews from<br />Our School Partners
-          </h2>
+          <h2 class="sec-title" data-html="testimonials.titleHtml"></h2>
         </div>
-        <div class="testi-grid">
-          <div class="testi-card fade">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">
-              "We have been buying school belts and socks from MM Enterprises
-              for over 12 years. Never once had a quality complaint from
-              parents. Always on time before the new academic year."
-            </p>
-            <div class="testi-author">
-              <div class="testi-avatar">SK</div>
-              <div>
-                <div class="testi-name">S. Kumar</div>
-                <div class="testi-role">
-                  Principal · St. Joseph's School, Mysore
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card fade">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">
-              "The custom-engraved medals for our annual sports day were
-              absolutely beautiful. The children were so proud to receive them.
-              MM Enterprises delivered 200 medals in just 4 days."
-            </p>
-            <div class="testi-author">
-              <div class="testi-avatar">RN</div>
-              <div>
-                <div class="testi-name">Rekha Nagaraj</div>
-                <div class="testi-role">
-                  Sports Director · Vidyashree School, Mysore
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testi-card fade">
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-quote">
-              "Best wholesale supplier in Mysore for school accessories.
-              Competitive prices, no compromise on quality, and Mr. Malick
-              personally ensures every order is right. Highly recommended."
-            </p>
-            <div class="testi-author">
-              <div class="testi-avatar">AM</div>
-              <div>
-                <div class="testi-name">Abdul Rasheed</div>
-                <div class="testi-role">
-                  Owner · New Star Uniform Store, Mysore
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="testi-grid" id="testi-grid"></div>
       </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
-      <div class="sec-inner" style="text-align: center">
+      <div class="sec-inner section-center">
         <div class="fade">
-          <div class="sec-eyebrow" style="justify-content: center">
-            <div
-              class="sec-eyebrow-line"
-              style="background: rgba(201, 151, 58, 0.5)"
-            ></div>
-            <span class="sec-eyebrow-text">Ready to Order?</span>
+          <div class="sec-eyebrow sec-eyebrow-center">
+            <div class="sec-eyebrow-line sec-eyebrow-line-soft"></div>
+            <span class="sec-eyebrow-text" data-text="cta.eyebrow"></span>
           </div>
         </div>
-        <h2 class="cta-title fade">
-          Get a Bulk Quote for<br />
-          <em>Your School Today</em>
-        </h2>
-        <p class="cta-sub fade">
-          WhatsApp us your requirements — product, quantity, custom details —
-          and we'll send a competitive quote within a few hours.
-        </p>
-        <div class="cta-actions fade">
-          <a
-            href="https://wa.me/919243332224?text=Hi%20MM%20Enterprises%2C%20I%20need%20a%20bulk%20quote%20for%20our%20school."
-            target="_blank"
-            class="btn-gold"
-            style="font-size: 15px; padding: 15px 32px"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"
-              />
-            </svg>
-            WhatsApp for Bulk Quote
-          </a>
-          <a
-            href="#contact"
-            class="btn-ghost"
-            style="
-              font-size: 15px;
-              padding: 14px 32px;
-              border-color: rgba(255, 255, 255, 0.25);
-            "
-            >Send an Enquiry Form →</a
-          >
-        </div>
-        <p class="cta-trust fade">
-          GST Invoices Provided &nbsp;·&nbsp; Bulk Discounts Available
-          &nbsp;·&nbsp; Delivery Across Karnataka
-        </p>
+        <h2 class="cta-title fade" data-html="cta.titleHtml"></h2>
+        <p class="cta-sub fade" data-text="cta.subtitle"></p>
+        <div class="cta-actions fade" id="cta-actions"></div>
+        <p class="cta-trust fade" data-text="cta.trust"></p>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" style="background: var(--cream)">
+    <section id="contact" class="section-cream">
       <div class="sec-inner">
         <div class="fade">
           <div class="sec-eyebrow">
             <div class="sec-eyebrow-line"></div>
-            <span class="sec-eyebrow-text">Get in Touch</span>
+            <span class="sec-eyebrow-text" data-text="contact.eyebrow"></span>
           </div>
-          <h2 class="sec-title">Visit Us or Send an Enquiry</h2>
+          <h2 class="sec-title" data-text="contact.title"></h2>
         </div>
         <div class="contact-grid">
           <div>
-            <div class="contact-info-list fade">
-              <div class="contact-item">
-                <div class="contact-icon-wrap">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-                    <circle cx="12" cy="10" r="3" />
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label">Address</div>
-                  <div class="contact-value">
-                    Abdul Rahman Road, Udaygiri<br />Mysore — 570019, Karnataka
-                  </div>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon-wrap">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label">Phone / WhatsApp</div>
-                  <div class="contact-value">
-                    <a href="tel:919243332224">+91 92433 32224</a>
-                  </div>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon-wrap">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label">Business Hours</div>
-                  <div class="contact-value">
-                    Open 24 Hours · All Days<br /><span
-                      style="font-size: 12px; color: var(--muted)"
-                      >Walk-in or call before visiting</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon-wrap">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <rect x="2" y="3" width="20" height="14" rx="2" />
-                    <line x1="8" y1="21" x2="16" y2="21" />
-                    <line x1="12" y1="17" x2="12" y2="21" />
-                  </svg>
-                </div>
-                <div>
-                  <div class="contact-label">Website</div>
-                  <div class="contact-value">
-                    <a href="https://mmenterprisesmys.in"
-                      >mmenterprisesmys.in</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="contact-info-list fade" id="contact-list"></div>
 
             <div class="map-wrap fade">
               <iframe
+                id="contact-map"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://maps.google.com/maps?q=Udaygiri+Mysore&z=14&output=embed"
+                src=""
                 title="MM Enterprises location"
               ></iframe>
             </div>
             <a
-              href="https://maps.google.com/?q=Abdul+Rahman+Road+Udaygiri+Mysore"
+              id="contact-directions"
+              href="#"
               target="_blank"
-              style="
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                margin-top: 10px;
-                font-size: 13px;
-                font-weight: 700;
-                color: var(--navy3);
-                text-decoration: none;
-              "
+              rel="noopener"
+              class="map-link"
             >
               <svg
                 width="14"
@@ -2390,227 +245,214 @@
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              Get Directions on Google Maps
+              <span data-text="contact.map.directionsLabel"></span>
             </a>
           </div>
 
           <div class="contact-form fade">
-            <div class="form-title">Send an Enquiry</div>
-            <div class="form-sub">
-              Tell us what you need and we'll get back to you with pricing and
-              availability.
-            </div>
-            <form onsubmit="submitForm(event)">
+            <div class="form-title" data-text="contact.form.title"></div>
+            <div class="form-sub" data-text="contact.form.subtitle"></div>
+            <form id="enquiry-form">
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label">Your Name</label
-                  ><input
+                  <label class="form-label" data-text="contact.form.nameLabel"></label>
+                  <input
                     class="form-input"
                     type="text"
-                    placeholder="School or contact name"
+                    data-placeholder="contact.form.namePlaceholder"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label class="form-label">Phone Number</label
-                  ><input
+                  <label class="form-label" data-text="contact.form.phoneLabel"></label>
+                  <input
                     class="form-input"
                     type="tel"
-                    placeholder="+91 98765 43210"
+                    data-placeholder="contact.form.phonePlaceholder"
                     required
                   />
                 </div>
               </div>
-              <div class="form-group" style="margin-bottom: 14px">
-                <label class="form-label">School / Institution Name</label>
+              <div class="form-group form-group-tight">
+                <label class="form-label" data-text="contact.form.schoolLabel"></label>
                 <input
                   class="form-input"
                   type="text"
-                  placeholder="e.g. St. Joseph's School, Mysore"
+                  data-placeholder="contact.form.schoolPlaceholder"
                 />
               </div>
-              <div class="form-group" style="margin-bottom: 14px">
-                <label class="form-label">Product Required</label>
-                <select class="form-select">
-                  <option>School Belts</option>
-                  <option>Uniform Socks</option>
-                  <option>Sports Medals</option>
-                  <option>Designer Labels</option>
-                  <option>School Ties</option>
-                  <option>Multiple Products</option>
-                  <option>Other / Custom</option>
-                </select>
+              <div class="form-group form-group-tight">
+                <label class="form-label" data-text="contact.form.productLabel"></label>
+                <select class="form-select" id="product-select"></select>
               </div>
-              <div class="form-group" style="margin-bottom: 14px">
-                <label class="form-label">Message / Requirements</label>
+              <div class="form-group form-group-tight">
+                <label class="form-label" data-text="contact.form.messageLabel"></label>
                 <textarea
                   class="form-textarea"
-                  placeholder="Please mention quantity, sizes, colours, custom printing requirements if any…"
+                  data-placeholder="contact.form.messagePlaceholder"
                 ></textarea>
               </div>
-              <button type="submit" class="form-btn">Send Enquiry →</button>
-              <p
-                style="
-                  text-align: center;
-                  margin-top: 12px;
-                  font-size: 12px;
-                  color: var(--muted);
-                "
-              >
-                Or WhatsApp directly:
-                <a
-                  href="https://wa.me/919243332224"
-                  target="_blank"
-                  style="color: var(--gold); font-weight: 700"
-                  >+91 92433 32224</a
-                >
+              <button type="submit" class="form-btn" data-text="contact.form.submitLabel"></button>
+              <p class="form-footnote">
+                <span data-text="contact.form.whatsappPrefix"></span>
+                <a id="form-whatsapp" href="#" target="_blank" rel="noopener" class="form-whatsapp"></a>
               </p>
             </form>
-            <div id="form-ok">
-              ✓ Enquiry sent! We'll contact you within a few hours.
-            </div>
+            <div id="form-ok"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <section class="seo-section">
+      <div class="sec-inner">
+        <p class="seo-text" data-text="seo.paragraph"></p>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-top">
         <div>
           <div class="footer-logo-row">
-            <div class="nav-logo-mark">MM</div>
-            <span class="footer-brand">MM <span>Enterprises</span></span>
+            <div class="nav-logo-mark" data-text="brand.mark"></div>
+            <span class="footer-brand" data-html="brand.nameHtml"></span>
           </div>
-          <p class="footer-desc">
-            Karnataka's trusted wholesale supplier of school uniform accessories
-            since 1985. Serving schools with quality, reliability and
-            competitive pricing.
-          </p>
+          <p class="footer-desc" data-text="footer.description"></p>
           <div class="footer-gold-line"></div>
         </div>
-        <div class="footer-col">
-          <h4>Products</h4>
-          <a href="#products">School Belts</a>
-          <a href="#products">Uniform Socks</a>
-          <a href="#products">Sports Medals</a>
-          <a href="#products">Designer Labels</a>
-          <a href="#products">School Ties</a>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="#about">About Us</a>
-          <a href="#clients">Who We Serve</a>
-          <a href="#testimonials">Reviews</a>
-          <a href="#contact">Contact</a>
-          <a href="https://wa.me/919243332224" target="_blank">WhatsApp</a>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <a href="#">Abdul Rahman Road</a>
-          <a href="#">Udaygiri, Mysore — 570019</a>
-          <a href="tel:919243332224">+91 92433 32224</a>
-          <a href="https://mmenterprisesmys.in">mmenterprisesmys.in</a>
-        </div>
+        <div class="footer-columns" id="footer-columns"></div>
       </div>
       <div class="footer-bottom">
-        <span
-          >© 2025 MM Enterprises. All rights reserved. Est. 1985 · GST
-          Registered</span
-        >
-        <span
-          >Website by <a href="https://www.shopinmysore.in">ShopInMysore</a> ·
-          Mysore</span
-        >
+        <span data-text="footer.bottomLeft"></span>
+        <span data-html="footer.bottomRightHtml"></span>
       </div>
     </footer>
 
-    <script>
-      /* cursor */
-      const c = document.getElementById("c"),
-        cr = document.getElementById("cr");
-      document.addEventListener("mousemove", (e) => {
-        c.style.left = e.clientX + "px";
-        c.style.top = e.clientY + "px";
-        setTimeout(() => {
-          cr.style.left = e.clientX + "px";
-          cr.style.top = e.clientY + "px";
-        }, 60);
-      });
-      document
-        .querySelectorAll("a,button,.product-card,.why-card")
-        .forEach((el) => {
-          el.addEventListener("mouseenter", () => {
-            c.style.width = "14px";
-            c.style.height = "14px";
-            cr.style.width = "44px";
-            cr.style.height = "44px";
-          });
-          el.addEventListener("mouseleave", () => {
-            c.style.width = "8px";
-            c.style.height = "8px";
-            cr.style.width = "32px";
-            cr.style.height = "32px";
-          });
-        });
+    <template id="nav-link-template">
+      <li><a href="#"></a></li>
+    </template>
 
-      /* scroll progress */
-      const pb = document.getElementById("pb");
-      window.addEventListener("scroll", () => {
-        const pct =
-          (scrollY / (document.body.scrollHeight - innerHeight)) * 100;
-        pb.style.width = Math.round(pct) + "%";
-        document
-          .getElementById("nav")
-          .classList.toggle("scrolled", scrollY > 60);
-      });
+    <template id="hero-action-template">
+      <a class="btn-gold" href="#" target="_blank" rel="noopener"></a>
+    </template>
 
-      /* mobile menu */
-      let mOpen = false;
-      function toggleMob() {
-        mOpen = !mOpen;
-        document.getElementById("mob-menu").classList.toggle("open", mOpen);
-      }
-      document.addEventListener("click", (e) => {
-        if (
-          mOpen &&
-          !e.target.closest("nav") &&
-          !e.target.closest("#mob-menu")
-        ) {
-          mOpen = false;
-          document.getElementById("mob-menu").classList.remove("open");
-        }
-      });
+    <template id="hero-stat-template">
+      <div>
+        <div class="hero-stat-num"></div>
+        <div class="hero-stat-label"></div>
+      </div>
+    </template>
 
-      /* scroll reveal */
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e, i) => {
-            if (e.isIntersecting) {
-              setTimeout(() => e.target.classList.add("in"), i * 90);
-              obs.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.08, rootMargin: "0px 0px -30px 0px" },
-      );
-      document.querySelectorAll(".fade").forEach((el) => obs.observe(el));
+    <template id="ticker-item-template">
+      <div class="ticker-item">Item <span class="ticker-dot"></span></div>
+    </template>
 
-      /* hero immediate */
-      setTimeout(
-        () =>
-          document
-            .querySelectorAll(".hero .fade")
-            .forEach((el) => el.classList.add("in")),
-        100,
-      );
+    <template id="product-card-template">
+      <div class="product-card fade">
+        <div class="product-img-wrap">
+          <img class="product-img" src="" alt="" />
+          <div class="product-special" hidden>
+            <div class="product-special-inner">
+              <div class="product-special-mark">?</div>
+              <p class="product-special-text"></p>
+            </div>
+          </div>
+          <span class="product-cat-badge"></span>
+        </div>
+        <div class="product-body">
+          <h3 class="product-name"></h3>
+          <p class="product-desc"></p>
+          <div class="product-tags"></div>
+          <a class="product-enquire" href="#" target="_blank" rel="noopener">
+            <span class="product-enquire-label"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </template>
 
-      /* form */
-      function submitForm(e) {
-        e.preventDefault();
-        e.target.style.display = "none";
-        document.getElementById("form-ok").style.display = "block";
-      }
-    </script>
+    <template id="product-tag-template">
+      <span class="product-tag"></span>
+    </template>
+
+    <template id="why-card-template">
+      <div class="why-card fade">
+        <div class="why-icon"></div>
+        <div class="why-title"></div>
+        <div class="why-text"></div>
+      </div>
+    </template>
+
+    <template id="about-text-template">
+      <p class="about-text fade"></p>
+    </template>
+
+    <template id="about-list-template">
+      <li>
+        <div class="about-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+        </div>
+        <span></span>
+      </li>
+    </template>
+
+    <template id="about-fact-template">
+      <div class="about-fact">
+        <div class="about-fact-num"></div>
+        <div class="about-fact-label"></div>
+      </div>
+    </template>
+
+    <template id="client-badge-template">
+      <div class="client-badge">
+        <span class="client-icon"></span>
+        <span class="client-label"></span>
+      </div>
+    </template>
+
+    <template id="testi-card-template">
+      <div class="testi-card fade">
+        <div class="testi-stars"></div>
+        <p class="testi-quote"></p>
+        <div class="testi-author">
+          <div class="testi-avatar"></div>
+          <div>
+            <div class="testi-name"></div>
+            <div class="testi-role"></div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="cta-action-template">
+      <a class="btn-gold" href="#" target="_blank" rel="noopener"></a>
+    </template>
+
+    <template id="contact-item-template">
+      <div class="contact-item">
+        <div class="contact-icon-wrap"></div>
+        <div>
+          <div class="contact-label"></div>
+          <div class="contact-value"></div>
+        </div>
+      </div>
+    </template>
+
+    <template id="footer-column-template">
+      <div class="footer-col">
+        <h4></h4>
+        <div class="footer-links"></div>
+      </div>
+    </template>
+
+    <template id="footer-link-template">
+      <a href="#"></a>
+    </template>
+
+    <script src="script.js" defer></script>
   </body>
 </html>

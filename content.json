@@ -1,0 +1,545 @@
+{
+  "meta": {
+    "title": "MM Enterprises - School Uniform Accessories Since 1985 | Mysore",
+    "description": "MM Enterprises, Mysore - wholesale supplier of school belts, uniform socks, sports medals, designer labels, badges, and uniform accessories since 1985. Serving schools across Karnataka with bulk orders and custom branding.",
+    "keywords": "MM Enterprises Mysore, school uniform accessories Mysore, school belt supplier Mysore, school belts Mysore, uniform socks Mysore, buy uniforms Mysore, sports medals Mysore, buy medals in Mysore, medals supplier Mysore, trophies and medals Mysore, designer labels Mysore, labeling in Mysore, school labels Mysore, uniform badges Mysore, embroidered badges Mysore, school ties Mysore, school accessories Mysore, school supplies Mysore, wholesale uniforms Mysore, wholesale school accessories Mysore, bulk school uniforms Mysore, bulk order uniforms Mysore, custom school branding Mysore, custom logo printing Mysore, custom labels Mysore, uniform accessories Karnataka, school uniform suppliers Karnataka, wholesale school belts Karnataka, uniform socks supplier Karnataka, medal engraving Mysore, sports day medals Mysore, annual day medals Mysore, interschool medals Mysore, school prizes Mysore, school awards Mysore, institutional uniforms Mysore, industrial uniforms Mysore, safety uniforms Mysore, workwear Mysore, uniform stitching Mysore, uniform printing Mysore, school uniform retailers Mysore, CBSE uniform suppliers Mysore, ICSE uniform suppliers Mysore, state board uniform suppliers Mysore, Kendriya Vidyalaya suppliers Mysore, school canteen uniform suppliers Mysore, school uniform accessories store Mysore, school belt manufacturer Mysore, uniform accessories wholesale Mysore, uniform badge supplier Mysore, school medals supplier Mysore, school trophies Mysore, medal engraving near me Mysore, sports medals shop Mysore, annual day medals supplier, school uniform labels Mysore, name labels for uniforms Mysore, embroidered school badges Mysore, school tie supplier Mysore, school belt buckle supplier Mysore, bulk school accessories Mysore, school uniform accessories Karnataka, school uniform socks supplier Mysore, school uniform belts supplier Karnataka, institutional uniforms supplier Mysore, industrial uniforms supplier Mysore, workwear uniforms Mysore, school uniform printing Mysore, custom uniform branding Mysore, school belt shop Mysore, school accessories shop Mysore, uniform accessories shop Mysore, medals and trophies Mysore, awards and medals Mysore, school sports day medals Mysore, custom medals Mysore, custom badges Mysore, school badge maker Mysore, school name labels Mysore, school uniform suppliers Mysore, school uniform wholesalers Mysore, bulk uniform suppliers Mysore, uniform accessories distributor Mysore, uniform accessories manufacturer Mysore, school accessories distributor Mysore",
+    "author": "MM Enterprises",
+    "siteName": "MM Enterprises",
+    "canonical": "https://mmenterprisesmys.in/",
+    "ogTitle": "MM Enterprises - School Uniform Accessories Since 1985 | Mysore",
+    "ogDescription": "MM Enterprises, Mysore - wholesale supplier of school belts, uniform socks, sports medals, designer labels, badges, and uniform accessories since 1985. Serving schools across Karnataka with bulk orders and custom branding.",
+    "ogImage": "https://mmenterprisesmys.in/assets/hero.png",
+    "twitterTitle": "MM Enterprises - School Uniform Accessories Since 1985 | Mysore",
+    "twitterDescription": "MM Enterprises, Mysore - wholesale supplier of school belts, uniform socks, sports medals, designer labels, badges, and uniform accessories since 1985. Serving schools across Karnataka with bulk orders and custom branding.",
+    "twitterImage": "https://mmenterprisesmys.in/assets/hero.png",
+    "twitterSite": "@mmenterprises"
+  },
+  "brand": {
+    "mark": "MM",
+    "nameHtml": "MM <span>Enterprises</span>"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "Products",
+        "href": "#products"
+      },
+      {
+        "label": "About Us",
+        "href": "#about"
+      },
+      {
+        "label": "Who We Serve",
+        "href": "#clients"
+      },
+      {
+        "label": "Reviews",
+        "href": "#testimonials"
+      },
+      {
+        "label": "Contact & Quote",
+        "href": "#contact"
+      }
+    ],
+    "cta": {
+      "label": "Enquire Now",
+      "href": "https://wa.me/919243332224?text=Hi%20MM%20Enterprises%2C%20I%20need%20a%20bulk%20quote%20for%20our%20school."
+    }
+  },
+  "wa": {
+    "label": "WhatsApp Now",
+    "href": "https://wa.me/919243332224"
+  },
+  "hero": {
+    "eyebrow": "Mysore's Trusted Supplier",
+    "titleHtml": "MM Enterprises<br /><em>School Uniform Accessories</em>",
+    "subtitle": "Wholesale - Retail - Custom Orders",
+    "description": "For 40 years, MM Enterprises has been the first name schools across Mysore and Karnataka call for quality school belts, uniform socks, sports medals, designer labels, and ties - delivered on time, every time.",
+    "actions": [
+      {
+        "label": "Browse Products",
+        "href": "#products",
+        "style": "gold"
+      },
+      {
+        "label": "Request Bulk Quote ->",
+        "href": "#contact",
+        "style": "ghost"
+      }
+    ],
+    "stats": [
+      {
+        "valueHtml": "40<span>+</span>",
+        "label": "Years in Business"
+      },
+      {
+        "valueHtml": "500<span>+</span>",
+        "label": "Schools Served"
+      },
+      {
+        "valueHtml": "4.9<span>*</span>",
+        "label": "Rated on Justdial"
+      }
+    ],
+    "image": {
+      "src": "assets/hero.png",
+      "alt": "School uniform accessories in Mysore"
+    },
+    "card": {
+      "value": "500+",
+      "labelHtml": "Schools trust us<br />across Karnataka"
+    },
+    "badge": {
+      "icon": "GST",
+      "title": "GST Verified",
+      "subtitle": "Registered 2017"
+    }
+  },
+  "ticker": [
+    "School Belts",
+    "Uniform Socks",
+    "Sports Medals",
+    "Designer Labels",
+    "School Ties",
+    "Bulk Orders Welcome",
+    "Custom Printing Available",
+    "40 Years of Trust"
+  ],
+  "products": {
+    "eyebrow": "Our Product Range",
+    "titleHtml": "Everything Your School<br />Needs, In One Place",
+    "subtitle": "Quality-tested products, available in bulk. Custom school branding and printing available on all items.",
+    "items": [
+      {
+        "name": "School Uniform Belts",
+        "description": "Durable nylon and polyester belts with brass or plastic buckles. Available in all sizes from Class 1 to Class 12. Custom school name printing available.",
+        "badge": "Best Seller",
+        "image": {
+          "src": "assets/sweater_tshirts_and_bags.png",
+          "alt": "School belts"
+        },
+        "tags": [
+          "All Sizes",
+          "Custom Print",
+          "Bulk Orders"
+        ],
+        "cta": {
+          "label": "Enquire Now",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20School%20Belts.",
+          "newTab": true
+        }
+      },
+      {
+        "name": "Uniform Socks",
+        "description": "Cotton-blend school socks in white, grey, navy and all school colours. Breathable, anti-odour, and durable enough for daily school wear.",
+        "badge": "High Demand",
+        "image": {
+          "src": "assets/bags_and_uniform.png",
+          "alt": "Uniform socks"
+        },
+        "tags": [
+          "All Colours",
+          "Cotton Blend",
+          "Anti-Odour"
+        ],
+        "cta": {
+          "label": "Enquire Now",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Uniform%20Socks.",
+          "newTab": true
+        }
+      },
+      {
+        "name": "Sports Medals & Awards",
+        "description": "Gold, silver and bronze medals for sports days, annual functions and competitions. Custom engraving with school name and event details available.",
+        "badge": "Annual Day Ready",
+        "image": {
+          "src": "assets/medals_and_cups.png",
+          "alt": "Sports medals and awards"
+        },
+        "tags": [
+          "Custom Engraving",
+          "Gold / Silver / Bronze"
+        ],
+        "cta": {
+          "label": "Enquire Now",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Sports%20Medals.",
+          "newTab": true
+        }
+      },
+      {
+        "name": "Designer Labels & Badges",
+        "description": "Woven name labels, cloth badges, embroidered emblems. School logo printing on labels - ideal for uniforms, bags, books and stationery.",
+        "badge": "Custom Branding",
+        "image": {
+          "src": "assets/badges.png",
+          "alt": "Designer labels and badges"
+        },
+        "tags": [
+          "Woven Labels",
+          "Cloth Badges",
+          "Logo Embroidery"
+        ],
+        "cta": {
+          "label": "Enquire Now",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Designer%20Labels.",
+          "newTab": true
+        }
+      },
+      {
+        "name": "Industrial Uniforms",
+        "description": "Durable industrial uniforms and safety gear including coveralls, jackets, reflective vests, and workwear designed for factories, construction sites, and technical staff. Built for comfort, safety, and long-lasting performance.",
+        "image": {
+          "src": "assets/industrial wear.png",
+          "alt": "Industrial uniforms"
+        },
+        "tags": [
+          "Safety Certified",
+          "Custom Branding"
+        ],
+        "cta": {
+          "label": "Enquire Now",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20want%20to%20enquire%20about%20Industrial%20Uniforms.",
+          "newTab": true
+        }
+      },
+      {
+        "name": "Custom Requirement?",
+        "description": "We fulfil custom uniform accessory orders for schools of any size. Tell us what you need and we'll provide a competitive bulk quote.",
+        "theme": "special",
+        "specialText": "Need something specific?",
+        "cta": {
+          "label": "Tell Us Your Need",
+          "href": "https://wa.me/919243332224?text=Hi%2C%20I%20have%20a%20custom%20school%20uniform%20accessory%20requirement.",
+          "newTab": true
+        }
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why Schools Choose Us",
+    "title": "The MM Enterprises Difference",
+    "items": [
+      {
+        "icon": "shield",
+        "title": "40 Years of Trust",
+        "text": "Established in 1985, we have been serving Karnataka schools for four decades. Schools that joined us in the 90s are still our customers today."
+      },
+      {
+        "icon": "badge",
+        "title": "Quality Guaranteed",
+        "text": "Every product is quality-checked before dispatch. Durable materials, neat stitching, colourfastness - we stand behind everything we supply."
+      },
+      {
+        "icon": "layers",
+        "title": "Bulk Order Experts",
+        "text": "Whether you need 50 belts or 5,000 - we handle bulk orders efficiently with competitive pricing that scales with your order size."
+      },
+      {
+        "icon": "clock",
+        "title": "On-Time Delivery",
+        "text": "We understand school calendars. Your orders arrive before the academic year begins, not after. Reliable road delivery across Karnataka."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "title": "Four Decades of Serving Karnataka's Schools",
+    "text": [
+      "Founded in 1985 by Mr. M. Malick, MM Enterprises started as a humble supplier of school accessories in Mysore. What began as a small operation has grown into one of Karnataka's most trusted names in school uniform accessories.",
+      "Today, from our store on Abdul Rahman Road, Udaygiri, Mysore, we serve hundreds of schools across the region - supplying everything from belts and socks to medals and custom labels - with the same commitment to quality and service that built our reputation over four decades."
+    ],
+    "images": {
+      "main": {
+        "src": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80",
+        "alt": "MM Enterprises store"
+      },
+      "accent": {
+        "src": "https://images.unsplash.com/photo-1503676382389-4809596d5290?w=400&q=80",
+        "alt": "School products"
+      }
+    },
+    "badge": {
+      "year": "1985",
+      "label": "Since"
+    },
+    "bullets": [
+      "GST-registered, government-verified business",
+      "Wholesale and retail - small and large orders both welcome",
+      "Custom branding - school name, logo and emblem printing",
+      "4.9* rated on Justdial - Trusted by 500+ Karnataka schools"
+    ],
+    "facts": [
+      {
+        "valueHtml": "1985",
+        "label": "Year Established"
+      },
+      {
+        "valueHtml": "40+",
+        "label": "Years Experience"
+      },
+      {
+        "valueHtml": "500+",
+        "label": "Schools Served"
+      },
+      {
+        "valueHtml": "4.9*",
+        "label": "Justdial Rating"
+      }
+    ]
+  },
+  "clients": {
+    "eyebrow": "Who We Serve",
+    "titleHtml": "Trusted Supplier for Every<br />Type of Institution",
+    "subtitle": "From small primary schools to large colleges - we have the capacity and product range to serve institutions of every size.",
+    "items": [
+      {
+        "icon": "school",
+        "label": "CBSE Schools"
+      },
+      {
+        "icon": "school",
+        "label": "ICSE Schools"
+      },
+      {
+        "icon": "school",
+        "label": "State Board Schools"
+      },
+      {
+        "icon": "school",
+        "label": "Kendriya Vidyalayas"
+      },
+      {
+        "icon": "book",
+        "label": "Colleges & Universities"
+      },
+      {
+        "icon": "book",
+        "label": "Coaching Institutes"
+      },
+      {
+        "icon": "cart",
+        "label": "Uniform Retailers"
+      },
+      {
+        "icon": "cart",
+        "label": "School Canteen Dealers"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "What Schools Say",
+    "titleHtml": "Trusted Reviews from<br />Our School Partners",
+    "items": [
+      {
+        "stars": "\u2605\u2605\u2605\u2605\u2605",
+        "quote": "We have been buying school belts and socks from MM Enterprises for over 12 years. Never once had a quality complaint from parents. Always on time before the new academic year.",
+        "avatar": "SK",
+        "name": "S. Kumar",
+        "role": "Principal - St. Joseph's School, Mysore"
+      },
+      {
+        "stars": "\u2605\u2605\u2605\u2605\u2605",
+        "quote": "The custom-engraved medals for our annual sports day were absolutely beautiful. The children were so proud to receive them. MM Enterprises delivered 200 medals in just 4 days.",
+        "avatar": "RN",
+        "name": "Rekha Nagaraj",
+        "role": "Sports Director - Vidyashree School, Mysore"
+      },
+      {
+        "stars": "\u2605\u2605\u2605\u2605\u2605",
+        "quote": "Best wholesale supplier in Mysore for school accessories. Competitive prices, no compromise on quality, and Mr. Malick personally ensures every order is right. Highly recommended.",
+        "avatar": "AM",
+        "name": "Abdul Rasheed",
+        "role": "Owner - New Star Uniform Store, Mysore"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Ready to Order?",
+    "titleHtml": "Get a Bulk Quote for<br /><em>Your School Today</em>",
+    "subtitle": "WhatsApp us your requirements - product, quantity, custom details - and we'll send a competitive quote within a few hours.",
+    "actions": [
+      {
+        "labelHtml": "WhatsApp for Bulk Quote",
+        "href": "https://wa.me/919243332224?text=Hi%20MM%20Enterprises%2C%20I%20need%20a%20bulk%20quote%20for%20our%20school.",
+        "style": "gold",
+        "size": "lg",
+        "newTab": true
+      },
+      {
+        "labelHtml": "Send an Enquiry Form ->",
+        "href": "#contact",
+        "style": "ghost",
+        "size": "lg"
+      }
+    ],
+    "trust": "GST Invoices Provided - Bulk Discounts Available - Delivery Across Karnataka"
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Visit Us or Send an Enquiry",
+    "items": [
+      {
+        "icon": "pin",
+        "label": "Address",
+        "valueHtml": "Abdul Rahman Road, Udaygiri<br />Mysore - 570019, Karnataka"
+      },
+      {
+        "icon": "phone",
+        "label": "Phone / WhatsApp",
+        "valueHtml": "<a href=\"tel:919243332224\">+91 92433 32224</a>"
+      },
+      {
+        "icon": "time",
+        "label": "Business Hours",
+        "valueHtml": "Open 24 Hours - All Days<br /><span class=\"contact-muted\">Walk-in or call before visiting</span>"
+      },
+      {
+        "icon": "web",
+        "label": "Website",
+        "valueHtml": "<a href=\"https://mmenterprisesmys.in\" target=\"_blank\" rel=\"noopener\">mmenterprisesmys.in</a>"
+      }
+    ],
+    "map": {
+      "embedSrc": "https://maps.google.com/maps?q=Udaygiri+Mysore&z=14&output=embed",
+      "directionsHref": "https://maps.google.com/?q=Abdul+Rahman+Road+Udaygiri+Mysore",
+      "directionsLabel": "Get Directions on Google Maps"
+    },
+    "form": {
+      "title": "Send an Enquiry",
+      "subtitle": "Tell us what you need and we'll get back to you with pricing and availability.",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "School or contact name",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+91 98765 43210",
+      "schoolLabel": "School / Institution Name",
+      "schoolPlaceholder": "e.g. St. Joseph's School, Mysore",
+      "productLabel": "Product Required",
+      "productOptions": [
+        "School Belts",
+        "Uniform Socks",
+        "Sports Medals",
+        "Designer Labels",
+        "School Ties",
+        "Industrial Uniforms",
+        "Multiple Products",
+        "Other / Custom"
+      ],
+      "messageLabel": "Message / Requirements",
+      "messagePlaceholder": "Please mention quantity, sizes, colours, custom printing requirements if any...",
+      "submitLabel": "Send Enquiry ->",
+      "whatsappPrefix": "Or WhatsApp directly:",
+      "whatsappLabel": "+91 92433 32224",
+      "whatsappHref": "https://wa.me/919243332224",
+      "successMessage": "Enquiry sent! We'll contact you within a few hours."
+    }
+  },
+  "seo": {
+    "paragraph": "MM Enterprises Mysore supplies school uniform accessories, school belts, uniform socks, sports medals, trophies, badges, designer labels, and custom school branding. Looking for labeling in Mysore or buy medals in Mysore? We provide medal engraving, annual day medals, sports day awards, uniform badges, logo printing, school ties, bulk orders, and wholesale uniform accessories across Mysore and Karnataka."
+  },
+  "footer": {
+    "description": "Karnataka's trusted wholesale supplier of school uniform accessories since 1985. Serving schools with quality, reliability and competitive pricing.",
+    "columns": [
+      {
+        "title": "Products",
+        "links": [
+          {
+            "label": "School Belts",
+            "href": "#products"
+          },
+          {
+            "label": "Uniform Socks",
+            "href": "#products"
+          },
+          {
+            "label": "Sports Medals",
+            "href": "#products"
+          },
+          {
+            "label": "Designer Labels",
+            "href": "#products"
+          },
+          {
+            "label": "Industrial Uniforms",
+            "href": "#products"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "label": "About Us",
+            "href": "#about"
+          },
+          {
+            "label": "Who We Serve",
+            "href": "#clients"
+          },
+          {
+            "label": "Reviews",
+            "href": "#testimonials"
+          },
+          {
+            "label": "Contact",
+            "href": "#contact"
+          },
+          {
+            "label": "WhatsApp",
+            "href": "https://wa.me/919243332224",
+            "newTab": true
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "links": [
+          {
+            "label": "Abdul Rahman Road",
+            "href": "#contact"
+          },
+          {
+            "label": "Udaygiri, Mysore - 570019",
+            "href": "#contact"
+          },
+          {
+            "label": "+91 92433 32224",
+            "href": "tel:919243332224"
+          },
+          {
+            "label": "mmenterprisesmys.in",
+            "href": "https://mmenterprisesmys.in",
+            "newTab": true
+          }
+        ]
+      }
+    ],
+    "bottomLeft": "\u00a9 2025 MM Enterprises. All rights reserved. Est. 1985 - GST Registered",
+    "bottomRightHtml": "Website by <a href=\"https://www.shopinmysore.in\" target=\"_blank\" rel=\"noopener\">ShopInMysore</a> - Mysore"
+  },
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MM Enterprises",
+    "description": "MM Enterprises, Mysore - wholesale supplier of school belts, uniform socks, sports medals, designer labels, badges, and uniform accessories since 1985. Serving schools across Karnataka with bulk orders and custom branding.",
+    "url": "https://mmenterprisesmys.in/",
+    "image": "https://mmenterprisesmys.in/assets/hero.png",
+    "telephone": "+91 92433 32224",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Abdul Rahman Road, Udaygiri",
+      "addressLocality": "Mysore",
+      "addressRegion": "Karnataka",
+      "postalCode": "570019",
+      "addressCountry": "IN"
+    },
+    "areaServed": [
+      "Mysore",
+      "Karnataka"
+    ],
+    "foundingDate": "1985",
+    "keywords": "MM Enterprises Mysore, school uniform accessories Mysore, school belt supplier Mysore, school belts Mysore, uniform socks Mysore, buy uniforms Mysore, sports medals Mysore, buy medals in Mysore, medals supplier Mysore, trophies and medals Mysore, designer labels Mysore, labeling in Mysore, school labels Mysore, uniform badges Mysore, embroidered badges Mysore, school ties Mysore, school accessories Mysore, school supplies Mysore, wholesale uniforms Mysore, wholesale school accessories Mysore, bulk school uniforms Mysore, bulk order uniforms Mysore, custom school branding Mysore, custom logo printing Mysore, custom labels Mysore, uniform accessories Karnataka, school uniform suppliers Karnataka, wholesale school belts Karnataka, uniform socks supplier Karnataka, medal engraving Mysore, sports day medals Mysore, annual day medals Mysore, interschool medals Mysore, school prizes Mysore, school awards Mysore, institutional uniforms Mysore, industrial uniforms Mysore, safety uniforms Mysore, workwear Mysore, uniform stitching Mysore, uniform printing Mysore, school uniform retailers Mysore, CBSE uniform suppliers Mysore, ICSE uniform suppliers Mysore, state board uniform suppliers Mysore, Kendriya Vidyalaya suppliers Mysore, school canteen uniform suppliers Mysore, school uniform accessories store Mysore, school belt manufacturer Mysore, uniform accessories wholesale Mysore, uniform badge supplier Mysore, school medals supplier Mysore, school trophies Mysore, medal engraving near me Mysore, sports medals shop Mysore, annual day medals supplier, school uniform labels Mysore, name labels for uniforms Mysore, embroidered school badges Mysore, school tie supplier Mysore, school belt buckle supplier Mysore, bulk school accessories Mysore, school uniform accessories Karnataka, school uniform socks supplier Mysore, school uniform belts supplier Karnataka, institutional uniforms supplier Mysore, industrial uniforms supplier Mysore, workwear uniforms Mysore, school uniform printing Mysore, custom uniform branding Mysore, school belt shop Mysore, school accessories shop Mysore, uniform accessories shop Mysore, medals and trophies Mysore, awards and medals Mysore, school sports day medals Mysore, custom medals Mysore, custom badges Mysore, school badge maker Mysore, school name labels Mysore, school uniform suppliers Mysore, school uniform wholesalers Mysore, bulk uniform suppliers Mysore, uniform accessories distributor Mysore, uniform accessories manufacturer Mysore, school accessories distributor Mysore",
+    "sameAs": [
+      "https://mmenterprisesmys.in"
+    ]
+  }
+}

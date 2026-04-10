@@ -1,0 +1,8 @@
+# Admin-only local editor (do not deploy)
+admin.html
+admin.css
+admin.js
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
