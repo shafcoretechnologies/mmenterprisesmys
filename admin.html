@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MM Enterprises - Content Editor</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div>
+          <div class="topbar-title">MM Enterprises Content Editor</div>
+          <div class="topbar-sub">Update site text and export a new content.json</div>
+        </div>
+        <div class="topbar-actions">
+          <button id="btn-download" class="btn primary" disabled>Download content.json</button>
+          <button id="btn-copy" class="btn" disabled>Copy JSON</button>
+        </div>
+      </header>
+
+      <section id="editor" class="panel">
+        <div class="section">
+          <h2>Brand & Navigation</h2>
+          <div class="grid" id="brand-fields"></div>
+        </div>
+
+        <div class="section">
+          <h2>Hero Section</h2>
+          <div class="grid" id="hero-fields"></div>
+        </div>
+
+        <div class="section">
+          <h2>Ticker Items</h2>
+          <div id="ticker-list" class="list"></div>
+          <div class="row row-start">
+            <button id="btn-add-ticker" class="btn">Add Ticker Item</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Products</h2>
+          <div class="grid" id="products-headings"></div>
+          <div id="products-list" class="list"></div>
+        </div>
+
+        <div class="section">
+          <h2>Why Choose Us</h2>
+          <div class="grid" id="why-headings"></div>
+          <div id="why-list" class="list"></div>
+        </div>
+
+        <div class="section">
+          <h2>Our Story</h2>
+          <div class="grid" id="about-headings"></div>
+          <div class="list" id="about-text-list"></div>
+          <div class="row row-start">
+            <button id="btn-add-about-text" class="btn">Add Paragraph</button>
+          </div>
+          <div class="list" id="about-bullets-list"></div>
+          <div class="row row-start">
+            <button id="btn-add-about-bullet" class="btn">Add Bullet</button>
+          </div>
+          <div class="list" id="about-facts-list"></div>
+          <div class="row row-start">
+            <button id="btn-add-about-fact" class="btn">Add Fact</button>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Testimonials</h2>
+          <div id="testimonials-list" class="list"></div>
+        </div>
+
+        <div class="section">
+          <h2>Contact</h2>
+          <div class="grid" id="contact-fields"></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="admin.js" defer></script>
+  </body>
+</html>
