@@ -392,7 +392,7 @@
       {
         "icon": "pin",
         "label": "Address",
-        "valueHtml": "Abdul Rahman Road, Udaygiri<br />Mysore - 570019, Karnataka"
+        "valueHtml": "<a href=\"https://www.google.com/maps?vet=10CAAQoqAOahcKEwjoyvW4z4iUAxUAAAAAHQAAAAAQBg..i&rlz=1C1CHBF_enIN1110IN1110&sca_esv=5411fb6e24022fbf&pvq=CgsvZy8xdGd6M3kxOCIVCg9tIG0gZW50ZXJwcmlzZXMQAhgD&lqi=Cg9tIG0gZW50ZXJwcmlzZXMiA4gBAUio6Ifv5YCAgAhaGBAAEAEYABgBIg5tbSBlbnRlcnByaXNlc5IBDXVuaWZvcm1fc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3baf706be013dab5:0x8ca800302d7a5d12\" target=\"_blank\" rel=\"noopener\">M M ENTERPRISES, 10, Syed Abdul Rahman Rd,<br />behind UMMAT FINANCIAL SERVICES, SBM Colony,<br />Udayagiri, Mysuru, Karnataka 570019</a>"
       },
       {
         "icon": "phone",
@@ -402,7 +402,7 @@
       {
         "icon": "time",
         "label": "Business Hours",
-        "valueHtml": "Open 24 Hours - All Days<br /><span class=\"contact-muted\">Walk-in or call before visiting</span>"
+        "valueHtml": "Monday to Saturday - 9 AM to 8 PM<br /><span class=\"contact-muted\">Walk-in or call before visiting</span>"
       },
       {
         "icon": "web",
@@ -412,7 +412,7 @@
     ],
     "map": {
       "embedSrc": "https://maps.google.com/maps?q=Udaygiri+Mysore&z=14&output=embed",
-      "directionsHref": "https://maps.google.com/?q=Abdul+Rahman+Road+Udaygiri+Mysore",
+      "directionsHref": "https://www.google.com/maps?vet=10CAAQoqAOahcKEwjoyvW4z4iUAxUAAAAAHQAAAAAQBg..i&rlz=1C1CHBF_enIN1110IN1110&sca_esv=5411fb6e24022fbf&pvq=CgsvZy8xdGd6M3kxOCIVCg9tIG0gZW50ZXJwcmlzZXMQAhgD&lqi=Cg9tIG0gZW50ZXJwcmlzZXMiA4gBAUio6Ifv5YCAgAhaGBAAEAEYABgBIg5tbSBlbnRlcnByaXNlc5IBDXVuaWZvcm1fc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3baf706be013dab5:0x8ca800302d7a5d12",
       "directionsLabel": "Get Directions on Google Maps"
     },
     "form": {
@@ -505,12 +505,14 @@
         "title": "Contact",
         "links": [
           {
-            "label": "Abdul Rahman Road",
-            "href": "#contact"
+            "label": "10, Syed Abdul Rahman Rd (Udayagiri)",
+            "href": "https://www.google.com/maps?vet=10CAAQoqAOahcKEwjoyvW4z4iUAxUAAAAAHQAAAAAQBg..i&rlz=1C1CHBF_enIN1110IN1110&sca_esv=5411fb6e24022fbf&pvq=CgsvZy8xdGd6M3kxOCIVCg9tIG0gZW50ZXJwcmlzZXMQAhgD&lqi=Cg9tIG0gZW50ZXJwcmlzZXMiA4gBAUio6Ifv5YCAgAhaGBAAEAEYABgBIg5tbSBlbnRlcnByaXNlc5IBDXVuaWZvcm1fc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3baf706be013dab5:0x8ca800302d7a5d12",
+            "newTab": true
           },
           {
-            "label": "Udaygiri, Mysore - 570019",
-            "href": "#contact"
+            "label": "SBM Colony, Mysuru - 570019",
+            "href": "https://www.google.com/maps?vet=10CAAQoqAOahcKEwjoyvW4z4iUAxUAAAAAHQAAAAAQBg..i&rlz=1C1CHBF_enIN1110IN1110&sca_esv=5411fb6e24022fbf&pvq=CgsvZy8xdGd6M3kxOCIVCg9tIG0gZW50ZXJwcmlzZXMQAhgD&lqi=Cg9tIG0gZW50ZXJwcmlzZXMiA4gBAUio6Ifv5YCAgAhaGBAAEAEYABgBIg5tbSBlbnRlcnByaXNlc5IBDXVuaWZvcm1fc3RvcmU&fvr=1&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3baf706be013dab5:0x8ca800302d7a5d12",
+            "newTab": true
           },
           {
             "label": "+91 92433 32224",
@@ -524,8 +526,8 @@
         ]
       }
     ],
-    "bottomLeft": "\u00a9 2025 M M Enterprises. All rights reserved. Est. 1985 - GST Registered",
-    "bottomRightHtml": "Website by <a href=\"https://www.shopinmysore.in\" target=\"_blank\" rel=\"noopener\">Shafcore</a> - Mysore"
+    "bottomLeft": "\u00a9 1985\u20132026 M M Enterprises. All rights reserved. GST Registered",
+    "bottomRightHtml": "Website by <a href=\"https://www.shopinmysore.in/shafcore\" target=\"_blank\" rel=\"noopener\">Shafcore</a> - Mysore"
   },
   "structuredData": {
     "@context": "https://schema.org",
