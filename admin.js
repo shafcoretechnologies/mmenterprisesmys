@@ -2,6 +2,18 @@ let contentData = null;
 
 const el = (id) => document.getElementById(id);
 
+const setNote = (msg) => {
+  const note = el("load-note");
+  if (!note) return;
+  if (!msg) {
+    note.textContent = "";
+    note.hidden = true;
+    return;
+  }
+  note.textContent = msg;
+  note.hidden = false;
+};
+
 const getByPath = (obj, path) =>
   path.split(".").reduce((acc, key) => (acc ? acc[key] : undefined), obj);
 
@@ -212,6 +224,19 @@ const enableButtons = () => {
   el("btn-copy").disabled = false;
 };
 
+const loadContentData = (data) => {
+  contentData = data;
+  renderEditor();
+  enableButtons();
+  setNote("");
+};
+
+const loadFromFile = async (file) => {
+  const text = await file.text();
+  const data = JSON.parse(text);
+  loadContentData(data);
+};
+
 const downloadJson = () => {
   const blob = new Blob([JSON.stringify(contentData, null, 2)], { type: "application/json" });
   const url = URL.createObjectURL(blob);
@@ -306,6 +331,24 @@ const renderEditor = () => {
 const init = async () => {
   el("btn-download").addEventListener("click", downloadJson);
   el("btn-copy").addEventListener("click", copyJson);
+
+  const loadBtn = el("btn-load");
+  const fileInput = el("file-content");
+  if (loadBtn && fileInput) {
+    loadBtn.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files && fileInput.files[0];
+      if (!file) return;
+      try {
+        await loadFromFile(file);
+      } catch (err) {
+        console.error(err);
+        alert("Could not load this JSON file. Please select a valid content.json.");
+      } finally {
+        fileInput.value = "";
+      }
+    });
+  }
   el("btn-add-ticker").addEventListener("click", () => {
     contentData.ticker.push("New ticker item");
     renderEditor();
@@ -323,10 +366,25 @@ const init = async () => {
     renderEditor();
   });
 
-  const response = await fetch("content.json", { cache: "no-store" });
-  contentData = await response.json();
-  renderEditor();
-  enableButtons();
+  // Auto-load works when served over http(s). When opening admin.html directly (file://),
+  // browsers usually block fetch() for local files, so we fall back to file picker.
+  try {
+    const response = await fetch("content.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Failed to load content.json (${response.status})`);
+    const data = await response.json();
+    loadContentData(data);
+  } catch (err) {
+    console.error(err);
+    if (window.location.protocol === "file:") {
+      setNote(
+        'Content could not be auto-loaded because this page is opened from your computer (file://). Click "Load content.json" and select the content.json file from this folder.',
+      );
+    } else {
+      setNote(
+        'Content could not be auto-loaded. Click "Load content.json" to select the file, or ensure content.json is in the same folder and accessible.',
+      );
+    }
+  }
 };
 
 window.addEventListener("DOMContentLoaded", init);

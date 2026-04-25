@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MM Enterprises - Content Editor</title>
+    <title>M M Enterprises - Content Editor</title>
+    <meta name="theme-color" content="#0d1b3e" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png" />
     <link rel="stylesheet" href="admin.css" />
   </head>
   <body>
     <div class="page">
       <header class="topbar">
         <div>
-          <div class="topbar-title">MM Enterprises Content Editor</div>
-          <div class="topbar-sub">Update site text and export a new content.json</div>
+          <div class="topbar-title">M M Enterprises Content Editor</div>
+          <div class="topbar-sub">
+            Update site text and export a new content.json
+          </div>
+          <div class="topbar-note" id="load-note" hidden></div>
         </div>
         <div class="topbar-actions">
-          <button id="btn-download" class="btn primary" disabled>Download content.json</button>
+          <button id="btn-load" class="btn">Load content.json</button>
+          <button id="btn-download" class="btn primary" disabled>
+            Download content.json
+          </button>
           <button id="btn-copy" class="btn" disabled>Copy JSON</button>
         </div>
+        <input id="file-content" type="file" accept="application/json,.json" hidden />
       </header>
 
       <section id="editor" class="panel">
