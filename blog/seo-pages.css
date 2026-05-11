@@ -1,0 +1,214 @@
+.seo-page {
+  width: min(1180px, 90vw);
+  margin: 0 auto;
+  padding: 112px 0 72px;
+}
+.seo-hero,
+.seo-index-hero {
+  min-height: 420px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 44px;
+  align-items: center;
+  padding: 34px 0 54px;
+}
+.seo-index-hero {
+  display: block;
+  min-height: auto;
+  max-width: 880px;
+}
+.seo-eyebrow {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.seo-page h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 7vw, 84px);
+  line-height: 0.95;
+  color: var(--navy);
+  letter-spacing: 0;
+  margin: 0 0 20px;
+}
+.seo-lead {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: clamp(17px, 2vw, 20px);
+  line-height: 1.8;
+}
+.seo-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.btn-gold,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-gold {
+  background: var(--gold);
+  color: var(--white);
+}
+.btn-ghost {
+  border: 1px solid rgba(59, 15, 23, 0.16);
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.45);
+}
+.seo-hero-media {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 15, 23, 0.1);
+  box-shadow: 0 24px 80px rgba(59, 15, 23, 0.14);
+  background: var(--white);
+}
+.seo-hero-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.seo-article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  max-width: 920px;
+}
+.seo-article section,
+.seo-callout,
+.seo-card {
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(59, 15, 23, 0.09);
+  border-radius: 8px;
+  padding: 26px;
+  box-shadow: 0 16px 44px rgba(59, 15, 23, 0.06);
+}
+.seo-article h2,
+.seo-card h2 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--navy);
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+.seo-article p,
+.seo-article li,
+.seo-card p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 16px;
+}
+.seo-article ul {
+  margin: 10px 0 0 20px;
+}
+.seo-faq details {
+  border-top: 1px solid rgba(59, 15, 23, 0.1);
+  padding: 16px 0;
+}
+.seo-faq summary {
+  cursor: pointer;
+  color: var(--navy);
+  font-weight: 700;
+}
+.seo-callout {
+  background: linear-gradient(135deg, rgba(199, 59, 59, 0.1), rgba(255, 255, 255, 0.72));
+}
+.seo-callout strong {
+  display: block;
+  color: var(--navy);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.seo-callout .btn-gold {
+  margin-top: 16px;
+}
+.seo-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.seo-related a {
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(199, 59, 59, 0.45);
+}
+.seo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding-bottom: 20px;
+}
+.seo-card {
+  display: grid;
+  gap: 18px;
+  padding: 0;
+  overflow: hidden;
+}
+.seo-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+.seo-card div {
+  padding: 0 22px 24px;
+}
+.seo-card span {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.seo-card h2 {
+  font-size: 30px;
+}
+.seo-card a {
+  display: inline-flex;
+  margin-top: 14px;
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+}
+.wa-float span {
+  color: var(--white);
+  font-weight: 700;
+}
+@media (max-width: 980px) {
+  .seo-hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .seo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .seo-page {
+    width: min(92vw, 1180px);
+    padding-top: 96px;
+  }
+  .seo-grid {
+    grid-template-columns: 1fr;
+  }
+  .seo-actions a {
+    width: 100%;
+  }
+  .seo-article section,
+  .seo-callout {
+    padding: 22px;
+  }
+}
